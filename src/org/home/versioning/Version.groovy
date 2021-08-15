@@ -2,8 +2,8 @@ package org.home.versioning
 
 class Version {
    
-    static String version
-    static String pattern = ~/(\d{1,3})\.(\d{1,3})\.(\d{1,3}).(\d{1,4})$/
+    private static String version
+    private static String pattern = ~/(\d{1,3})\.(\d{1,3})\.(\d{1,3}).(\d{1,4})$/
 
     static String bumpBuild(String version) {
       this.version = version
@@ -29,3 +29,4 @@ class Version {
       return newVersion
     }
 }
+
