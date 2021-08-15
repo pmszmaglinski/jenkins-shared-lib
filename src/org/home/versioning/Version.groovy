@@ -1,6 +1,6 @@
 package org.home.versioning
 
-class Version {
+class Version implements Serializable {
    
     private static String version
     private static String pattern = ~/(\d{1,3})\.(\d{1,3})\.(\d{1,3}).(\d{1,4})$/
